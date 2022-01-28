@@ -6,10 +6,10 @@ import javax.swing.JFrame;
 
 public class Program extends JFrame {
 
-	Board board;
+	private Board board;
 
-	protected static int WIDTH = 800;
-	protected static int HEIGHT = WIDTH * 9/16;
+	public static int WIDTH = 1000;
+	public static int HEIGHT = WIDTH * 9/16;
 
 	public Program() {
 		board = new Board();

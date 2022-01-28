@@ -1,5 +1,5 @@
 package engine;
 
-enum Key {
+public enum Key {
 	Up, Down, Left, Right, Enter, Escape, Space
 }

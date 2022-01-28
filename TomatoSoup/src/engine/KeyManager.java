@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class KeyManager {
 
-	HashMap<Key, Boolean> state;
+	private HashMap<Key, Boolean> state;
 	
 	public KeyManager() {
 		state = new HashMap<Key, Boolean>();
