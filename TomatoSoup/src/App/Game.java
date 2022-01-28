@@ -14,7 +14,8 @@ public class Game {
 	private RectangleObject box;
 	
 	public Game() {
-		player = new PlayerObject(100,100,50,50, Color.red);
+		player = new PlayerObject(100,100,25,25, Color.red);
+		player.setPath("src/images/test.png");
 		box = new RectangleObject(200, 200, 50, 50, Color.red);
 
 	}

@@ -37,7 +37,7 @@ public class Collider {
 				collisions++;
 			}
 		}
-		System.out.println(collisions);
+
 		if(collisions > 1) {
 			return true;
 		}

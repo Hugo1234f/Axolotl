@@ -39,8 +39,6 @@ public class PlayerController {
 			if(!player.collider.isColliding(moveRect))
 				player.moveY(ySpeed);
 		}
-		
-		System.out.println(player.getX() + " " + (player.getX() + player.getWidth()));
 	}
 	
 	public void setXSpeed(int xSpeed) {

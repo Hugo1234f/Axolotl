@@ -22,14 +22,16 @@ public class PlayerObject extends RectangleObject {
 		
 		playerController.Update(keyManager);
 		collider.update(this);
-		
-		//System.out.println("X: " + collider.getRect().x + " Y: " + collider.getRect().y);
 	}
 
 	@Override
 	public void draw(Graphics2D graphics) {
-		graphics.setColor(baseColor);
-		graphics.fillRect(getX(), getY(), getWidth(), getHeight());
+		if(useSprite) {
+			graphics.drawImage(img, null, getX(), getY());
+		}else {
+			graphics.setColor(baseColor);
+			graphics.fillRect(getX(), getY(), getWidth(), getHeight());
+		}
 	}
 
 }
