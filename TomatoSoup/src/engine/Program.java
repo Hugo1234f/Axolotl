@@ -8,8 +8,8 @@ public class Program extends JFrame {
 
 	private Board board;
 
-	public static int WIDTH = 1000;
-	public static int HEIGHT = WIDTH * 9/16;
+	public static int WIDTH = 1280;
+	public static int HEIGHT = 720;
 
 	public Program() {
 		board = new Board();
@@ -21,6 +21,7 @@ public class Program extends JFrame {
 		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		setTitle("Tomato Soup");
 
 		board.Start();
 

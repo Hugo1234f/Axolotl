@@ -8,17 +8,20 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.JComponent;
 
+import App.Background;
 import App.Game;
 
 public class Board extends JComponent {
 
 	private final int FPS = 60;
 	private Game game;
+	private Background background;
 	private KeyManager keyManager;
 
 	public Board() {
 		keyManager = new KeyManager();
 		game = new Game();
+		background = new Background();
 	}
 
 	@Override
@@ -32,6 +35,7 @@ public class Board extends JComponent {
 		graphics.setColor(Color.black);
 		graphics.fillRect(0, 0, getWidth(), getHeight());
 
+		background.draw(graphics);
 		game.draw(graphics);
 	}
 
