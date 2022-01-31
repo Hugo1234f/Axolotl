@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 import javax.swing.JComponent;
 
@@ -17,6 +18,8 @@ public class Board extends JComponent {
 	private Game game;
 	private Background background;
 	private KeyManager keyManager;
+	
+
 
 	public Board() {
 		keyManager = new KeyManager();
@@ -59,5 +62,6 @@ public class Board extends JComponent {
 			this.repaint();
 		}
 	}
+	
 
 }
