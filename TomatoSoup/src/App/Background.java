@@ -72,6 +72,10 @@ public class Background {
 			for(int i = 0; i < width; i++) {
 				switch(currentLine.charAt(i)) {
 					case '0':
+						background[i][j] = new BackgroundBox(Color.DARK_GRAY);
+						break;
+					case '1':
+						background[i][j] = new BackgroundBox(Color.black);
 						break;
 				}
 					
